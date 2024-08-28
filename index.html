@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewpoint" content="width=device-width, initial scale=1.0">
+		<title>Data Input form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 25px;
+		}
+		form {
+			max-width: 500px;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+		}
+		label {
+			display: grid;
+			margin-bottom: 8px;
+			font-weight: bold;
+		}
+		input, select, button {
+			width: 90%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Manual Data Entry</h2>
+	<form action="/submit-data" method="POST">
+		<label for="campainName">Conduct Research:</label>
+		<input type="text" id="conductResearch" name="conductResearch">
+
+		<label for="totalSales">Total Sales:</label>
+		<input type="text" id="totalSales" name="totalSales">
+
+		<label for="campaignType">Campaign Type:</label>
+		<select id="campaignType" name=campaign_type">
+			<option value="survey">Survey</option>
+			<option value="competitorAnalysis">Competitor Analysis</option>
+			<option value="customerBehaviour">Customer Behaviour</option>
+		</select>
+
+		<label for="campaignDate">Campaign Date:</label>
+		<input type="date" id="campaignDate" name="campaign_date" required>
+
+		<button type="submit">Submit</button>
+	</form>
+
+	<script src="form-calidation.js" defer></script>
+</body>
+</html>
