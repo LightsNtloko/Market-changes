@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewpoint" content="width=device-width, initial scale=1.0">
+		<title>Data Input form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 25px;
+		}
+		form {
+			max-width: 500px;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+		}
+		label {
+			display: grid;
+			margin-bottom: 8px;
+			font-weight: bold;
+		}
+		input, select, button {
+			width: 90%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Manual Data Entry</h2>
+	<form action="/submit-data" method="POST">
+
+		<!-- Company Information Section -->
+		<label for="company_name">Company Name:</label>
+		<input type="text" id="company_name" name="company_name" required>
+
+		<label for="company_email">Company Email:</label>
+		<input type="email" id="company_email" name="company_email" required>
+
+		<label for="company_socials">Company social:</label>
+		<input type="text" id="company_socials" name="company_socials">
+
+		<label for-"day_to_day_operations">Day to Day Operations (Nature of Business):</label>
+		<textarea id="day_to_day_operations" name="day_to_day_operations" required></textarea>
+
+		<label for="product_name">Product Name(s):</label>
+		<input type=" text" id="product_name" name="product_name" required>
+
+		<!-- Research Type Dropdown -->
+		<label for="research_type">Research Type:</label>
+		<select id="research_type" name="research_type" required onchange="showResearchOptions()">
+			<option value="">Select Research Type</option>
+			<option value="primary">Primary Data Research (Qualitative Techniques)</option>
+			<option value="secondary">Secondary Data Research (Quantitative Techniques)</option>
+		</select>
+
+		<!-- Primary Data Research Options -->
+		<div id="primary_options" style="display:none;">
+			<label>Select Primary Research Techniques:</label>
+			<input type="checkbox" id="focus_group" name="primary_techniques" value="Focus Group">
+			<label for="focus_group">Focus Group</label><br>
+			<input type="checkbox" id="interviews" name="primary_techniques" value="In-Depth Interviews">
+			<label for="interviews">In-Depth Interviews</label><br>
+			<input type="checkbox" id="predictive" name="primary_techniques" value="Predictive Techniques">
+			<label for="predictive">Predictive Techniques</label><br>
+		</div>
+
+		<!-- Secondary Data Research Options -->
+		<div id="secondary_options" style="display:none;">
+			<label>Select Secondary Research Techniques:</label>
+			<input type="checkbox" id="sales_invoice" name="secondary_techniques" value="Sales Invoice">
+			<label for="sales_invoice">Sales Invoice</label><br>
+			<input type="checkbox" id="sales_reports" name="secondary_techniques" value="Sales Activity Reports">
+			<label for="sales_reports">Sales Activity Reports</label><br>
+			<input type="checkbox" id="account_receivables" name="secondary_techniques" value="Account Receivables">
+			<label for="account_receivables">Account Receivables</label><br>
+			<input type="checkbox" id="syndicated_data" name="secondary_techniques" value="Syndicated Data">
+			<label for="syndicated_data">Syndicated Data</label><br>
+			<input type="checkbox" id="published_sources" name="secondary_techniques" value="Published Sources">
+			<label for="published_sources">Published Sources</label><br>
+			<input type="checkbox" id="databases" name="secondary_techniques" value="Databases">
+			<label for="databases">Databases</label><br>
+		</div>
+
+		<!-- Submit Button -->
+		<button type="submit">Submit</button>
+	</form>
+
+	<script>
+		function showResearchOptions() {
+			var researchType = document.getElementById("research_type").value;
+			if (researchType === "primary") {
+				document.getElementById("primary_options").style.display = "block";
+				document.getElementById("secondary_options").style.display = "none";
+			} else if (researchType === "secondary") {
+				document.getElementById("primary_options").style.display = "none";
+				document.getElementById("secondary_options").style.display = "block";
+			} else {
+				document.getElementById("primary_options").style.display = "none";
+				document.getElementById("secondary_options").style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
