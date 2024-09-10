@@ -44,7 +44,7 @@ nav ul li a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url('image/background.jpeg');
+	background-image: url('..images/background.jpeg');
 	background-size: cover;
 	background-position: center;
 	height: 80vh;

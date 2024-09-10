@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Changes - Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Link to styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-nav a {
+            color: #fff;
+            font-weight: bold;
+        }
+        .navbar-nav a:hover {
+            color: #f0ad4e;
+        }
+        .intro {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+        .intro h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #f0ad4e;
+            border: none;
+        }
+        .features, .about {
+            padding: 50px 0;
+        }
+        .feature {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #f0ad4e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Marketing Information System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section class="intro" style="background-image: url('{{ url_for('static', filename='images/cover.jpeg') }}');">
+        <div class="container">
+            <h1>Marketing Information System</h1>
+            <p>Your generated solution for data-driven marketing research and insights.</p>
+            <a href="YOUR_DEPLOYED_APP_URL" class="btn btn-primary btn-lg">Visit the App</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4 feature">
+                    <img src="{{ url_for('static', filename='images/background.jpeg') }}" alt="Feature 1">
+                    <h4>Real-Time Data</h4>
+                    <p>Get access to the latest and reliable marketing data and analytics at your fingertips.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <img src="https://via.placeholder.com/400x300" alt="Feature 2">
+                    <h4>Customizable Reports</h4>
+                    <p>Generate tailored reports to meet the specific needs of your business.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <img src="https://via.placeholder.com/400x300" alt="Feature 3">
+                    <h4>AI-Powered Insights</h4>
+                    <p>Leverage artificial intelligence to predict future market trends and customer behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About This Project</h2>
+            <p>This project was inspired by the need for businesses to make relevant, timely and informed decisions based on reliable market research data. As a developer,
+	    I wanted to create a tool that enables organisations big or small it may be, with gathering and analyzing market information easier. This is part of my portfolio project,
+	    and I am excited to share it with the world.</p>
+            <p>This project is also part of my journy in software engineering learnership at ALX Africa, where I am currently building my skills in full-stack development.</p>
+            <div class="text-center mt-4">
+                <a href="LightsNtloko" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Market Changes. All Rights Reserved.</p>
+            <p>Connect with me: 
+                <a href="https://www.linkedin.com/in/khanyiso-ntloko-36b16927b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BefJF8D3iRCeskpyXVggPsg%3D%3D"
+			target="_blank">LinkedIn</a> |
+                <a href="https://github.com/LightsNtloko" target="_blank">GitHub</a> |
+                <a href="https://twitter.com/Lights_Ntloko" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
