@@ -136,11 +136,11 @@ def submit_data():
         file.write(f"Product Name: {product_name}\n")
         file.write(f"Research Type: {research_type}\n")
     
-    if primary_techniques:
-        file.write(f"Primary Research Techniques: {primary_techniques}\n")
-    if secondary_techniques:
-        file.write(f"Secondary Research Techniques: {secondary_techniques}\n")
-    file.write("\n")
+        if primary_techniques:
+            file.write(f"Primary Research Techniques: {primary_techniques}\n")
+        if secondary_techniques:
+            file.write(f"Secondary Research Techniques: {secondary_techniques}\n")
+        file.write("\n")
 
     # Flash a success message
     flash('Data submited successfully!')

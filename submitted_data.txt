@@ -4,3 +4,53 @@ Company Socials: AA12345 (facebook)
 Day-to-Day Operations: offers mathematics lesson for undergraduate college and university students
 Product Name: Education
 Research Type: secondary
+Company Name: Patsoul Oficial
+Company Email: phaahlampho00@gmail.com
+Company Socials: Patsoul
+Day-to-Day Operations: Music Production & DJ
+Product Name: Music
+Research Type: primary
+Company Name: Patsoul Oficial
+Company Email: phaahlampho00@gmail.com
+Company Socials: Patsoul
+Day-to-Day Operations: Music Production & DJ
+Product Name: Music
+Research Type: primary
+Company Name: Patsoul Oficial
+Company Email: phaahlampho00@gmail.com
+Company Socials: Patsoul
+Day-to-Day Operations: Music Production & DJ
+Product Name: Music
+Research Type: primary
+Company Name: Patsoul Oficial
+Company Email: phaahlampho00@gmail.com
+Company Socials: Patsoul
+Day-to-Day Operations: Music production and Dj
+Product Name: Music
+Research Type: primary
+Company Name: CAN
+Company Email: Can@gmail.com
+Company Socials: Can (instagram)
+Day-to-Day Operations: Car service such as maintainences and repairs
+Product Name: Car service kit
+Research Type: secondary
+Company Name: CAN
+Company Email: Can@gmail.com
+Company Socials: Can (instagram)
+Day-to-Day Operations: Car service such as maintainences and repairs
+Product Name: Car service kit
+Research Type: secondary
+Company Name: CAN
+Company Email: Can@gmail.com
+Company Socials: Can (instagram)
+Day-to-Day Operations: Car service such as maintainences and repairs
+Product Name: Car service kit
+Research Type: secondary
+Company Name: CAN
+Company Email: Can@gmail.com
+Company Socials: Can (instagram)
+Day-to-Day Operations: 12
+Product Name: Car service kit
+Research Type: secondary
+Secondary Research Techniques: ['Account Receivables', 'Published Sources']
+
